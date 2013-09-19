@@ -1,0 +1,11 @@
+<div class="container">
+  <p>text text tex</p>
+  <p>{{ item }}</p>
+</div>
+
+<div ng-init="items=['a','b','c','d','e','x']">
+  <input placeholder="filter" ng-model="f" />
+  <div ng-repeat="item in items | filter:f" class="repeat-item">
+    {{item}}
+  </div>
+</div>

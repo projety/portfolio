@@ -1,31 +1,77 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Project name</a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-
 <div class="container">
+
+  <div id="carousel-example-generic" class="carousel jumbotron slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <p class="lead">Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet ferm entumone non mi porta.</p>
+      </div>
+      <div class="item">
+        <p class="lead">2 Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet ferm entumone non mi porta.</p>
+      </div>
+      <div class="item">
+        <p class="lead">3 Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet ferm entumone non mi porta.</p>
+      </div>
+    </div>
+  </div>
 
   <div class="starter-template">
     <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+    <input data-ngbk-focus type="text">
+
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.
+    </p>
     <ul class="list-inline">
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+      <li ng-repeat="thing in awesomeThings" >{{thing}}</li>
     </ul>
   </div>
 
 </div><!-- /.container -->
+
+<div class="container">
+  <!-- FILTER CONTROLS -->
+
+  <div class="controls">
+    <h3>Filter Controls</h3>
+    <ul>
+      <li class="filter" data-filter="all">Show All</li>
+      <li class="filter" data-filter="category_1">Category 1</li>
+      <li class="filter" data-filter="category_2">Category 2</li>
+      <li class="filter" data-filter="category_3">Category 3</li>
+      <li class="filter" data-filter="category_3 category_1">Category 1 &amp; 3</li>
+    </ul>
+  </div>
+
+  <!-- SORT CONTROLS -->
+
+  <div class="controls">
+    <h3>Sort Controls</h3>
+    <ul>
+      <li class="sort" data-sort="data-cat" data-order="desc">Descending</li>
+      <li class="sort" data-sort="data-cat" data-order="asc">Ascending</li>
+      <li class="sort active" data-sort="default" data-order="desc">Default</li>
+    </ul>
+  </div>
+
+  <hr/>
+
+  <!-- GRID -->
+
+  <ul data-gallery class="portfolio">
+    <li class="mix category_1" data-cat="1">1</li>
+    <li class="mix category_3" data-cat="3">3</li>
+    <li class="mix category_2" data-cat="2">2</li>
+    <li class="mix category_3" data-cat="3">3</li>
+    <li class="mix category_2" data-cat="2">2</li>
+    <li class="mix category_1" data-cat="1">1</li>
+    <li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
+  </ul>
+</div>
